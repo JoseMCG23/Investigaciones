@@ -65,3 +65,10 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+
+.menu img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+    object-fit: cover;
+}
