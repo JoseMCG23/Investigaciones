@@ -12,7 +12,6 @@ img{
     width: 8%;
 }
 
-
 .menu{
     max-width: 1000px;
     margin: 50px auto;
@@ -71,4 +70,15 @@ nav a:hover{
     border-radius: 10px;
     box-shadow: 2px 2px 15px black;
     object-fit: cover;
+}
+
+body{ line-height: 1.65; }
+
+.menu h2, .menu h3{
+    margin-top: 1.2em;
+    margin-bottom: .4em;
+}
+
+.menu p, .menu ul, .menu ol{
+    margin: .6em 0 1em;
 }
