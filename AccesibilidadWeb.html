@@ -3,203 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloSEO.css">
-    <title>SEO</title>
-
-    <!-- Metadatos Open Graph -->
-    <!-- Open Graph básico -->
-    <meta property="og:title" content="Investigaciones – SEO y Rendimiento">
-    <meta property="og:description" content="Optimización SEO técnico aplicada: OG/Twitter, JSON-LD, encabezados e imágenes.">
-    <meta property="og:url" content="https://josemcg23.github.io/Investigaciones/SEO.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://josemcg23.github.io/Investigaciones/assets/preview.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Portada del sitio Investigaciones Cortas de la UTN">
-
-
-    <!-- Metadatos Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Investigación sobre SEO y Rendimiento">
-    <meta name="twitter:description" content="Optimización técnica SEO aplicada en la investigación 1 
-    de Diseño de Aplicaciones Web.">
-    <meta name="twitter:image" content="https://www.utn.ac.cr/sites/default/files/logo-blanco.svg">
-
-    <!-- Datos estructurados JSON-LD -->
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Investigación sobre SEO y Rendimiento",
-    "author": {
-        "@type": "Person",
-        "name": "Jose Mario Cubillo Gutiérrez"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "UTN - Universidad Técnica Nacional"
-    },
-    "datePublished": "2025-10-20"
-    }
-</script>
+    <link rel="stylesheet" href="CSS/estilosInvestigaciones.css">
+    <link rel="stylesheet" href="CSS/AccesibilidadEstilo.css">
+    <title>Accesibilidad Web</title>
 
 </head>
 <body>
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
     <header>
-        <img src=
-        "https://www.utn.ac.cr/sites/default/files/logo-blanco.svg" 
-        alt="UTN">
-        <h1>SEO y Rendimiento</h1>
-        
+        <img src="https://www.utn.ac.cr/sites/default/files/logo-blanco.svg" alt="UTN">
+        <h1>Accesibilidad Web</h1>
     </header>
 
-    <main class="menu">
+    <main id="contenido" class="menu">
+
         <h2 class="subtitulo" style="text-decoration: underline;">
-            INVESTIGACIÓN 1: SEO (OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA) Y RENDIMIENTO
+            INVESTIGACIÓN 3: ACCESIBILIDAD WEB
         </h2>
 
         <section>
-            <h2>¿Qué es el SEO?</h2>
-            <p>El SEO (Optimización para motores de búsqueda) se utiliza para poder ayudar a los buscadores 
-                y usuarios en internet para que puedan entender mejor el contenido que crees en tu sitio web.
-                en otras palabras, sirve para ayudarte a que puedan encontrar tu página y tomar la desición
-                de poder visitarla en el buscador. 
+            <h2>¿Qué es la Accesibilidad Web?</h2>
+            <p>La <strong>accesibilidad web</strong> es la práctica de diseñar y desarrollar sitios web para que 
+            todas las personas puedan usarlos con sin problema, independientemente de sus capacidades o situación. La
+            accesibilidad web permite combinar la programación y el diseño para lograr un mayor entendimiento
+            y un fácil manejo de cualquier sitio web accesible,
             </p>
         </section>
         <section>
-            <h2>SEO y Velocidad de Carga</h2>
-            <p>
-                <strong>Las Métricas web principales</strong> son un conjunto de métricas que sirven para medir 
-                en tiempo real la experiencia de los usuarios basandose en la velocidad de carga del contenido,
-                la interacción y la estabilidad visual de las páginas web. Es por esto que se le recomiendan
-                a los creadores de sitios web tener buenas Métricas web principales para conseguir buenos 
-                resultados a la hora de realizar búsquedas, para asi ser recompensados con buenos posicionamientos
-                principales. Las Métricas web Principales son:
-                <section>
+            <h2>Importancia</h2>
+            <ul>
+                <li><strong>Inclusividad:</strong> Diseñar para la diversidad promueve
+                inclusión para diversas personas con sus propias capacidades y limitaciones.</li>
+                <li><strong>Cumplimiento legal:</strong> Muchos países y organizaciones adoptan la accesibilidad Web
+                como requisito legal, exigiendo que el contenido sea fácil de usar por cualquier usuario.</li>
+                <li><strong>Mejor experiencia del usuario:</strong> Las páginas web accesibles no solo sirve para
+                personas con capacidades limitadas, si no que támbien mejora la calidad de experiencia de
+                los usuarios promedio al ser más limpias y sencillas las páginas web.</li>
+                <li><strong>Optimización de motores de búsqueda (SEO):</strong> La accesibilidad web támbien potencia
+                al SEO, ajustando las preferencias de los motores de búsquedas por ser un sitio web fácil de
+                manejar.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Principios de las WCAG</h2>
+            <p>Los principios de Accesibilidad al Contenido Web (WCAG), han sido desarrolladas por el
+                Consorcio World Wide Web, y son pautas que nos facilitan la accesibilidad de los sitios web
+                a todas las personas que posean capacidades limitadas, incluso a los usuarios promedio le hes de 
+                utilidad, teniendo las organizaciones que quieran cumplir la Ley de Estadounidenses con Discapacidades
+                (ADA), seguir las pautas mencionadas anteriormente. Actualmente hay 4 principios WCAG:
+
                 <ul>
-                <li><strong style="text-decoration: underline;">Renderizado del mayor elemento con contenido (LCP):
-                </strong> Se encarga de medir la velocidad de carga del contenido para otorgar buena experiencia 
-                de usuario. El valor de LCP recomendado es que sea inferior a 2,5 segundos.
+                <li><strong>Perceptible:</strong> El contenido debe de ser visible para las personas
+                que posean mayor dependencia visual, y ciertos problemas en alguno de sus otros sentidos.</li>
+                <li><strong>Operable:</strong> Los sitios web deben de ser facilmente manejables, ya sea mediante
+                comandos de voz, o usando únicamente el teclado, en caso de no poseer un ratón.</li>
+                <li><strong>Comprensible:</strong> Básicamente se debe entender de forma clara y sencilla el 
+                contenido del sitio web.</li>
+                <li><strong>Robusto</strong> El sitio web debe de poder transmitir la información y el contenido
+                    a todos los usuarios posibles, eso incluye a usuarios que utilizan técnologia de asistencia.</li>
+            </ul>
+            </p>
+
+        <section aria-labelledby="ejemploPractico">
+            <h2 id="ejemplo-simple">Ejemplo práctico (simple)</h2>
+            <p>Este ejemplo aplica navegación con teclado, HTML semántico y WAI-ARIA sin complejidad extra.</p>
+
+            <!-- 1) Imagen semántica -->
+            <figure>
+                <img src="https://picsum.photos/seed/alt/800/250"
+                    alt="Ilustración geométrica que representa un banner de sitio web">
+                <figcaption>Figura 1. Imagen con texto alternativo descriptivo.</figcaption>
+            </figure>
+
+            <!-- 2) Bloque de acciones con controles nativos -->
+            <section aria-labelledby="acciones">
+                <h3 id="acciones">Acciones rápidas</h3>
+                <p>
+                <a href="#form-contacto">Ir al formulario</a>
+                <button type="button" id="btn-info" aria-describedby="info-ayuda">
+                    Mostrar mensaje accesible
+                </button>
+                </p>
+                <p id="info-ayuda" class="visually-hidden">Este botón muestra un mensaje que los lectores de pantalla pueden anunciar.</p>
+                <div id="info-live" role="alert" aria-live="polite"></div>
+            </section>
+
+            <!-- 3) Formulario accesible (con aria) -->
+            <form id="form-contacto" aria-label="Formulario de contacto" novalidate>
+                <div>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required aria-describedby="nombre-ayuda">
+                <div id="nombre-ayuda" class="visually-hidden">Escribe tu nombre completo.</div>
+                </div>
+
+                <div>
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" name="correo" type="email" required aria-describedby="correo-err">
+                <div id="correo-err" class="field-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- 4) Tabla mínima accesible -->
+            <section aria-labelledby="tabla-demo-titulo">
+                <h3 id="tabla-demo-titulo">Tabla (mínima) accesible</h3>
+                <table class="demo-table" aria-describedby="tabla-desc">
+                <caption id="tabla-desc">Listado de calificaciones.</caption>
+                <thead>
+                    <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">Ana</th>
+                    <td>95</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Luis</th>
+                    <td>88</td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+            </section>
+
+        <section>
+        <h2>Referencias</h2>
+            <ul>
+                <li>
+                    WCAG. (2024). 
+                    <em>What is WCAG?</em>. 
+                    <br>
+                    <a href="https://www.wcag.com/resource/what-is-wcag/" target="_blank">
+                        https://www.wcag.com/resource/what-is-wcag/
+                    </a>
                 </li>
-                <li><strong style="text-decoration: underline;">Interaction to Next Paint (INP):</strong> Se 
-                    encarga de medir la capacidad de respuesta para proporcionar una buena experiencia de 
-                    usuario. Se recomienda evitar un valor de INP superior a 200 milisegundos.
+                <li>
+                    Iberdrola. (2024). 
+                    <em>¿Qué es la accesibilidad web?</em>. 
+                    <br>
+                    <a href="https://www.iberdrola.com/conocenos/nuestro-modelo-innovacion/que-es-accesibilidad-web" target="_blank">
+                        https://www.iberdrola.com/conocenos/nuestro-modelo-innovacion/que-es-accesibilidad-web
+                    </a>
                 </li>
-                <li><strong style="text-decoration: underline;">Cambios de diseño acumulados (CLS):</strong> 
-                    Se encarga de medir la estabilidad visual para ofrecer una buena experiencia de usuario. 
-                    Se recomienda un valor inferior a 0,1.
+                <li>
+                    Hostinger. (2024). 
+                    <em>Accesibilidad web: qué es y por qué es importante</em>. 
+                    <br>
+                    <a href="https://www.hostinger.com/co/tutoriales/accesibilidad-web#%C2%BFPor_que_es_importante_la_accesibilidad_web" target="_blank">
+                        https://www.hostinger.com/co/tutoriales/accesibilidad-web#%C2%BFPor_que_es_importante_la_accesibilidad_web
+                    </a>
                 </li>
-                </ul>
-        </section>
-            </p>
+            </ul>
         </section>
 
-        <section>
-            <h2>SEO Técnico</h2>
-            <p>El SEO técnico se le considera como la base fundamental de cualquier estrategia de 
-                posicionamiento web. Sin una estructura bien optimizada, contenido de calidad no sería capaz de 
-                alcanzar su máximo potencial. Según la guía de Google LLC sobre datos estructurados, que es donde 
-                se esta basando para realizar esta investigación, “añadir structured data puede habilitar 
-                resultados enriquecidos en la búsqueda y fomentar una mayor tasa de clics” (CTR). </p>
-
-            <h3>Metaetiquetas semánticas</h3>
-            <p>Se consideran como metaetiquetas semánticas a elementos como: <strong> &lt;title&gt;,
-                &lt;meta name= "description"&gt; y &lt;meta name="robots"&gt; </strong>, y sirven para informar
-                a los motores de búsqueda acerca del tema del que se esta tratando en la página web y poder
-                ayudar a la hora de que los usuarios realicen búsquedas relacionadas al contenido de tu sitio
-                web.
-                
-            </p>
-
-            <h3>Datos estructurados</h3>
-            <p>Un buen uso correcto de la jerarquía de los encabezados (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;,
-            etc.) facilitan a los motores de búsqueda el poder comprender dicha jerarquía de información
-            permitiendo un mejor uso del SEO. Si una página web no posee una buena estructura, esto
-            podría dificultar el registro del contenido.</p>
-
-            <h3>Optimización de imágenes</h3>
-            <p>Esto no solo mejora la experiencia del usuario, si no que también mejora el SEO:
-                Los archivos bien nombrados, los atributos <strong>alt</strong> bien descriptivos,
-                y los formatos actuales como WebP sirven para que los motores de búsqueda puedan
-                comprender también el contenido visual y lo registren correctamente. Un ejemplo es 
-                que Google nos recomienda usar nombres de archivos bien descriptivos y diferenciables
-                en lugar de usar los nombres por defecto o genéricos, algo como "IMG00023.JPG".
-            </p>
-        </section>
-
-        <section>
-            <h2>Etiquetas Open Graph y Twitter Cards</h2>
-            <p>
-                Las <strong>etiquetas Open Graph</strong> son fragmentos de código HTML que nos permiten 
-                controlar el cómo se muestra el contenido de una página al ser compartida en redes sociales, 
-                como <strong>Facebook</strong>, <strong>Whatsapp</strong> o <strong>Instagram</strong>.
-                Estas etiquetas nos ayudan a definir el título, la descripción, la imagen y el link, o URL
-                que se visualizarán en la vista previa del enlace, mejorando la apariencia y despertando el
-                interés de los usuarios para que quieran visitar el sitio web. 
-                <br>
-                Por otro lado,  las <strong>Twitter Cards</strong> funcionan de forma similar, permitiendo
-                a los sitios web controlar el cómo se muestra su contenido al ser compartido en la plataforma de
-                <strong>Twitter</strong>. Estas etiquetas utilizan un formato muy parecido al de 
-                Open Graph e incluiyen elementos como el título, la descripción, el autor y una imagen destacada.
-            </p>
-        </section>
-
-        <section>
-            <h2>Ejemplo práctico</h2>
-            <p>
-            En esta página ya se aplicaron las optimizaciones de SEO técnico, las cuales se han investigado, 
-            donde se incluye el uso de encabezados, metadatos de Open Graph y Twitter Cards, datos estructurados
-            en formato JSON-LD y la optimización de imágenes con el atributo <strong>alt</strong>. Estas 
-            mejoras ayudan a que el contenido sea más accesible y visible para los motores de búsqueda. Las
-            pruebas pueden verse en las imágenes de abajo
-            </p>
-            <img src="imagenes/OpenGraph.png" alt="OpenGraph">
-            <p>Prueba del Open Graph (Facebook o Whatsapp) mediante la herramienta oficial de Facebook:
-                <nav>
-                    <ul>
-                        <li><a href="https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fjosemcg23.github.io%2FInvestigaciones%2F">Facebook Sharing Debugger</a></li>
-                    </ul>
-                </nav>
-            </p>
-            <p>Vídeo de prueba del codigo HTML</p>
-            <video width="640" height="360" controls src="Videos/codigoSEO.mp4"></video>
-        </section>
-
-        <section>
-    <h2>Referencias</h2>
-        <ul>
-            <li>
-                Google Developers. (2024). 
-                <em>Guía de búsqueda y documentación oficial</em>. 
-                <br>
-                <a href="https://developers.google.com/search/docs?hl=es-419" target="_blank">
-                    https://developers.google.com/search/docs?hl=es-419
-                </a>
-            </li>
-            <li>
-                Digital Guider. (2023). 
-                <em>¿Qué son las etiquetas Open Graph y por qué son importantes?</em>. 
-                <br>
-                <a href="https://digitalguider.com/blog/open-graph-meta-tags/" target="_blank">
-                    https://digitalguider.com/blog/open-graph-meta-tags/
-                </a>
-            </li>
-            <li>
-                Ahrefs. (2024). 
-                <em>Open Graph Meta Tags: What They Are and How to Use Them</em>. 
-                <br>
-                <a href="https://ahrefs.com/blog/open-graph-meta-tags/" target="_blank">
-                    https://ahrefs.com/blog/open-graph-meta-tags/
-                </a>
-            </li>
-        </ul>
-    </section>
 
 
         <nav class="Volver">
             <ul>
                 <li>
-                    <a href="menu.html">Volver a la página principal</a>
+                    <a href="index.html">Volver a la página principal</a>
                 </li>
             </ul>
         </nav>
@@ -212,5 +179,37 @@
         "https://www.utn.ac.cr/sites/default/files/logo-blanco.svg" 
         alt="UTN">
     </footer>
+    
+    <script>
+        // Mensaje accesible
+        (function(){
+            const btn = document.getElementById('btn-info');
+            const live = document.getElementById('info-live');
+            if (!btn || !live) return;
+            btn.addEventListener('click', () => {
+            live.textContent = 'Mensaje: la interfaz es navegable con teclado y compatible con lectores de pantalla.';
+            btn.focus();
+            });
+        })();
+
+        // Validación simple de correo con anuncio accesible
+        (function(){
+            const form = document.getElementById('form-contacto');
+            if (!form) return;
+            const correo = document.getElementById('correo');
+            const err = document.getElementById('correo-err');
+
+            form.addEventListener('submit', (e) => {
+            err.textContent = '';
+            if (!correo.value || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(correo.value)) {
+                e.preventDefault();
+                err.textContent = 'Por favor, escribe un correo válido (ej. nombre@dominio.com).';
+                correo.focus();
+            }
+            });
+        })();
+    </script>
+
+
 </body>
 </html>

@@ -8,11 +8,6 @@ header{
     font-family:  Georgia, 'Times New Roman', Times, serif;
 }
 
-img{
-    width: 8%;
-}
-
-
 .menu{
     max-width: 1000px;
     margin: 50px auto;
@@ -95,4 +90,14 @@ footer {
 
 footer img{
     width: 6%;
+}
+
+header img{
+    width: 48px;
+    height: auto;
+}
+
+header h1{
+    margin: 0;
+    font-size: 1.6rem;
 }

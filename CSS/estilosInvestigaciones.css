@@ -1,16 +1,56 @@
-header{
+.site-header{
     background-color: rgb(13, 45, 109);
     color: #FFF;
     padding: 10px 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
-    font-family:  Georgia, 'Times New Roman', Times, serif;
+    gap: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-img{
-    width: 8%;
+.site-header .brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
+
+.site-header .brand img{
+    width: 48px;
+    height: auto;
+}
+
+.site-header h1{
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+/* Menú del header */
+.site-header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 14px;
+}
+
+/* Enlaces del header */
+.site-header nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.site-header nav a:hover,
+.site-header nav a:focus{
+    text-decoration: underline;
+}
+
+/* Enlaces fuera del header (contenido): se mantienen negros */
+main nav a,
+.menu nav a{
+    color: #000;
+}
+
 
 .menu{
     max-width: 1000px;
@@ -81,4 +121,63 @@ body{ line-height: 1.65; }
 
 .menu p, .menu ul, .menu ol{
     margin: .6em 0 1em;
+}
+
+/* Imagenes y videos Buenas y malas practicas*/
+.practicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 10px 0 18px;
+}
+.PracticasDuales{
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 6px 18px black;
+}
+.PracticasDuales img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.PracticasDuales figcaption{
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.PracticasDuales video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.practicas {
+    align-items: start;
+}
+
+header{
+    background-color: rgb(13, 45, 109);
+    color: #FFF;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+header img{
+    width: 48px;
+    height: auto;
+}
+
+header h1{
+    margin: 0;
+    font-size: 1.6rem;
 }

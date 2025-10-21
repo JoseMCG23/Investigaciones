@@ -1,0 +1,104 @@
+
+  /*Saltar al contenido con TAB*/
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    z-index: 1000;
+}
+.skip-link:focus {
+    left: 10px;
+}
+
+:focus-visible {
+    outline: 3px solid #000;
+    outline-offset: 3px;
+}
+
+.ejemplo-grid{
+    display:grid; gap:16px; grid-template-columns: 1fr; margin-block: 16px;
+}
+
+.card h3{ margin-top:0; }
+.bad{ border-color:#b00020; }
+.good{ border-color:#0a7b25; }
+
+.demo-table{ width:100%; border-collapse:collapse; }
+.demo-table th, .demo-table td{ border:1px solid #ddd; padding:8px; }
+.demo-table thead th{ background:#f5f5f5; }
+
+.field-error{ color:#b00020; margin-top:6px; }
+.visually-hidden{ position:absolute; left:-9999px; }
+
+
+.card{
+    background:#fff;
+    border:1px solid rgba(0,0,0,.15);
+    border-radius:12px;
+    padding:16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    z-index: 1000;
+}
+.skip-link:focus { left: 10px; }
+
+/* Foco visible para todo lo navegable */
+:focus-visible {
+    outline: 3px solid #000;
+    outline-offset: 3px;
+}
+
+/* Header mejorado */
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: center;
+}
+.header .brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header h1{ margin: 0; font-size: 1.6rem; }
+.header img{ width: 48px; height: auto; }
+
+/* Enlaces del header en blanco (sobre fondo oscuro) */
+.header nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.header nav a:hover,
+.header nav a:focus{ text-decoration: underline; }
+
+/* Tarjeta simple (si quieres usarla en otros lados) */
+.card{
+    background:#fff;
+    border:1px solid rgba(0,0,0,.15);
+    border-radius:12px;
+    padding:16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+/* Tabla demo accesible */
+.demo-table{ width:100%; border-collapse: collapse; }
+.demo-table th, .demo-table td{ border:1px solid #ddd; padding:8px; }
+.demo-table thead th{ background:#f5f5f5; }
+
+/* Mensajes/ayudas accesibles */
+.field-error{ color:#b00020; margin-top:6px; }
+.visually-hidden{ position:absolute; left:-9999px; }
